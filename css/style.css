@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 20px;
+  padding: 10px;
+  background: linear-gradient(150deg, #f19914, #f114f1ad);
+  text-align: center;
+  color: #ebf9fd;
+}
+ 
+ 
+main {
+  padding: 20px;
+ 
+  display: flex;
+  gap: 1.5rem;
+}
+
+ 
+#content {
+  flex: 4;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+aside {
+  flex: 2;
+}
+ 
+h2 {
+  color: #253a3f;
+}
+ 
+h3 {
+  color: #253a3f;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner  h2 {
+  margin-bottom: unset;
+  color: #f19914;
+}
+
+.item > .inner > p {
+  margin-top: 5px;
+  color: #614a27;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 450px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=number] {
+  font-family: 'Poppins', sans-serif;
+  background: #F5F1FF;
+  border: 2px solid #f19914;
+  border-radius: 8px;
+  padding: 7px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.btn-cari {
+  width: fit-content;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  padding: 7px;
+  border: 2px solid #f19914;
+  color: black;
+  font-size: 22px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-cari:hover {
+  background: linear-gradient(150deg, #f19914, #f114f1ee);
+  color: white;
+}
+
+.btn-submit {
+  width: fit-content;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  padding: 12px 24px;
+  border: 2px solid #f19914;
+  color: black;
+  font-size: 24px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(150deg, #f19914, #f114f1ee);
+  color: white;
+}
+
+input[type=text], input[type=number], .btn-submit:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  margin: auto 0;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../assets/check-solid.svg');
+  background-size: cover;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url('../assets/check.svg');
+  background-size: contain;
+}
+
+.trash-button {
+  width: 40px;
+  height: 40px;
+
+
+  background: url('../assets/hapus-solid.svg');
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url('../assets/hapus.svg');
+  background-size: contain;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+
+
+  background: url('../assets/back-solid.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url('../assets/back.svg');
+  background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+  outline: none;
+}
+
+
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
